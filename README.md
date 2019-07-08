@@ -2,8 +2,8 @@
 
 |Build Status|Branch|
 |---|---|
-|[![Build status](https://ci.appveyor.com/api/projects/status/aimyu88pb50g1h9d?svg=true)](https://ci.appveyor.com/project/mczerniawski/altools/branch/master)|master|
-|[![Build status](https://ci.appveyor.com/api/projects/status/aimyu88pb50g1h9d?svg=true)](https://ci.appveyor.com/project/mczerniawski/altools/branch/dev)|dev|
+|[![Build status](https://ci.appveyor.com/api/projects/status/aimyu88pb50g1h9d/branch/master?svg=true)](https://ci.appveyor.com/project/mczerniawski/altools/branch/master)|master|
+|[![Build status](https://ci.appveyor.com/api/projects/status/aimyu88pb50g1h9d/branch/master?svg=true)](https://ci.appveyor.com/project/mczerniawski/altools/branch/dev)|dev|
 
 ---
 
