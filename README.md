@@ -9,7 +9,7 @@
 
 ## Index
 <!-- TOC -->
-- [What is ALTools](#What-is-pChecksAD)
+- [What is ALTools](#What-is-ALTools)
 - [Installation](#Installation)
 - [How to Create Azure Log Worksapce](https://github.com/mczerniawski/ALTools/blob/master/docs/Create-AzureLog-Workspace.md)
 - [How to Retrieve required information from existing Workspace](https://github.com/mczerniawski/ALTools/blob/master/docs/Get-WorkspaceID-PrimaryKey.md)
