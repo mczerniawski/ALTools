@@ -24,7 +24,7 @@ Describe 'Module Information' -Tags 'Command'{
             $Script:Manifest.RootModule | Should Be "$ModuleName.psm1"
         }
         It 'Valid Manifest GUID' {
-            $Script:Manifest.Guid | Should -Be "Please Paste here your module Guid - Test-ModuleManifest '<ModulePath>' | Select-Object -ExpandProperty Guid"
+            $Script:Manifest.Guid | Should -Be '84f1ee5e-6c28-4852-b512-adb6ca4a1d78'
         }
     }
 

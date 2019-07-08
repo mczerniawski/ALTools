@@ -1,4 +1,4 @@
-Function Export-WEToLogAnalytics {
+Function Export-ObjectToLogAnalytics {
     [cmdletbinding()]
     [Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSUseSingularNouns', '')]
     Param(
@@ -17,7 +17,7 @@ Function Export-WEToLogAnalytics {
             ValueFromPipeline = $True, ValueFromPipelineByPropertyName = $True)]
         [ValidateNotNullOrEmpty()]
         [psobject[]]
-        $WECEvent,
+        $PSObject,
 
         [Parameter(Mandatory = $true,
             ValueFromPipeline = $True, ValueFromPipelineByPropertyName = $True)]
@@ -30,7 +30,7 @@ Function Export-WEToLogAnalytics {
         $TimeStampField
     )
     process {
-        $bodyAsJson = ConvertTo-Json $WECEvent
+        $bodyAsJson = ConvertTo-Json $PSObject
         $body = [System.Text.Encoding]::UTF8.GetBytes($bodyAsJson)
         $method = 'POST'
         $resource = '/api/logs'
@@ -46,7 +46,7 @@ Function Export-WEToLogAnalytics {
             ContentType         = $contentType
             Resource            = $resource
         }
-        $signature = Get-WELogAnalyticsSignature @getLogAnalyticsSignatureSplat
+        $signature = Get-LogAnalyticsSignature @getLogAnalyticsSignatureSplat
 
         $uri = "https://{0}.ods.opinsights.azure.com{1}?api-version=2016-04-01" -f $ALWorkspaceID, $resource
 

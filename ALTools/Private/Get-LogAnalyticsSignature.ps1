@@ -1,4 +1,4 @@
-Function Get-WELogAnalyticsSignature {
+Function Get-LogAnalyticsSignature {
     [cmdletbinding()]
     Param (
         $ALWorkspaceID,
