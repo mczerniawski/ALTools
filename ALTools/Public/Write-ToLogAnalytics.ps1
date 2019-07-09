@@ -39,7 +39,6 @@ function Write-ToLogAnalytics {
 
     process {
         $batchId = [System.Guid]::NewGuid()
-        #foreach ($PSObj in $PSObject) {
         $ObjectToAzureLogs = $PSObject
         $ObjectToAzureLogs | Add-Member -MemberType NoteProperty -Name 'InvocationId' -Value ([System.Guid]::NewGuid())
         $ObjectToAzureLogs | Add-Member -MemberType NoteProperty -Name 'invocationStartTime' -Value $invocationStartTime
@@ -59,6 +58,5 @@ function Write-ToLogAnalytics {
         if ($result -ne 200) {
             Write-Error -Message "Something went wrong with exporting to Azure Log - {ErrorCode: $($result.ErrorCode)}"
         }
-        #}
     }
 }

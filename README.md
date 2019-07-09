@@ -2,14 +2,14 @@
 
 |Build Status|Branch|
 |---|---|
-|[![Build status](https://ci.appveyor.com/api/projects/status/aimyu88pb50g1h9d?svg=true)](https://ci.appveyor.com/project/mczerniawski/altools/branch/master)|master|
-|[![Build status](https://ci.appveyor.com/api/projects/status/aimyu88pb50g1h9d?svg=true)](https://ci.appveyor.com/project/mczerniawski/altools/branch/dev)|dev|
+|[![Build status](https://ci.appveyor.com/api/projects/status/aimyu88pb50g1h9d/branch/master?svg=true)](https://ci.appveyor.com/project/mczerniawski/altools/branch/master)|master|
+|[![Build status](https://ci.appveyor.com/api/projects/status/aimyu88pb50g1h9d/branch/master?svg=true)](https://ci.appveyor.com/project/mczerniawski/altools/branch/dev)|dev|
 
 ---
 
 ## Index
 <!-- TOC -->
-- [What is ALTools](#What-is-pChecksAD)
+- [What is ALTools](#What-is-ALTools)
 - [Installation](#Installation)
 - [How to Create Azure Log Worksapce](https://github.com/mczerniawski/ALTools/blob/master/docs/Create-AzureLog-Workspace.md)
 - [How to Retrieve required information from existing Workspace](https://github.com/mczerniawski/ALTools/blob/master/docs/Get-WorkspaceID-PrimaryKey.md)
