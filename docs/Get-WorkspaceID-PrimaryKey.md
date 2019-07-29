@@ -21,7 +21,7 @@ $WorkspaceID = Get-AzureRmOperationalInsightsWorkspace -ResourceGroupName $resou
 
 $WorkspaceData = @{
     PrimarySharedKey = $PrimarySharedKey
-    ALWorkspaceID = $ALWorkspaceID
+    ALWorkspaceID = $WorkspaceID
 }
 ```
 
