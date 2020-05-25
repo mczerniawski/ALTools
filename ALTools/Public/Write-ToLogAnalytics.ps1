@@ -39,7 +39,7 @@ function Write-ToLogAnalytics {
 
     process {
         $batchId = [System.Guid]::NewGuid()
-        $ObjectToAzureLogs = $PSObject
+        $ObjectToAzureLogs = $PSObject.PSObject.Copy()
         $ObjectToAzureLogs | Add-Member -MemberType NoteProperty -Name 'InvocationId' -Value ([System.Guid]::NewGuid())
         $ObjectToAzureLogs | Add-Member -MemberType NoteProperty -Name 'invocationStartTime' -Value $invocationStartTime
         $ObjectToAzureLogs | Add-Member -MemberType NoteProperty -Name 'invocationEndTime' -Value $invocationEndTime
